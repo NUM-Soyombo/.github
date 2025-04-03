@@ -1,29 +1,34 @@
-### GIT INSTRUCTION - ДАГАХТУН, САХИХТУН!!!
-1. Create new branch from develop:
+### GIT Код хийх заавар!!!
+1. Create new repository in github.com /чиний project-ийн нэр folder нэр адилхан байх ёстой/
+2. Config git:
 ```
-$ git checkout develop
-$ git pull origin develop
-$ git checkout -b [LABEL-TYPE]/[ISSUE-NUMBER]_[ISSUE-TITLE]
+git config --global user.name <Your Name>
+git config --global user.email <your.email@example.com>
 ```
-2. Then, make empty commit for creating Pull Request (PR):
+3. In your folder 
 ```
-$ git commit --allow-empty -m 'Empty commit for creating [WIP] Pull Request'
-$ git push -u origin HEAD
+git init 
+git add .
+git commit -m "<type>: (subject)"
 ```
-
-Whenever you finish the work of the day, please commit and push. Then, other members can check your code.
+### example commit:
+  fix: encoderiin timer.
+  type => chore, docs, feat, fix, refacter, style, values.
+### Connecting Your Local Repository to the Remote Repository
 ```
-$ git add .
-$ git commit -m '[ISSUE-NUMBER] [COMMIT-MESSAGE]'
+git remote add origin https://github.com/yourusername/your-repository.git
+git push -u origin main
 ```
-Before you push your commit(s), please verify there is no new changes at develop branch:
+### Cloning an Existing Repository
 ```
-$ git pull origin develop
+git clone https://github.com/username/repository.git
 ```
-Congratulations, now you can push your code:
+### Before you push your commit(s), please:
+```
+$ git pull origin main
+```
+### Now you can push your code:
 ```
 $ git push
 ```
 
-
-> The golden rule of git rebase is to never use it on public branches.
