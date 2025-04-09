@@ -25,10 +25,10 @@ git clone https://github.com/username/repository.git
 ```
 ### Before you push your commit(s), please:
 ```
-$ git pull origin main
+git pull origin main
 ```
 ### Now you can push your code:
 ```
-$ git push
+git push
 ```
 
