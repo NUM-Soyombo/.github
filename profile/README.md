@@ -32,3 +32,16 @@ git pull origin main
 git push
 ```
 
+#### SSH холбох заавар.
+```
+ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+#### Гарч ирэх үр дүнг copy хийж ав.
+```
+cat ~/.ssh/id_rsa.pub
+```
+#### Github-ийн Settings-рүү орооод SSH and GPS keys.
+`New ssh keys` ногоон товчин дээр дараад copy-дож авсан кодоо хуулж тавь.
