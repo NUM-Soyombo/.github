@@ -1,21 +1,23 @@
 ### GIT Код хийх заавар!!!
 1. Create new repository in github.com /чиний project-ийн нэр folder нэр адилхан байх ёстой/
-2. Config git:
+`Private байх` , `Add README.md товчийн битгий дар`
+2. Terminal дээрээ Config git хийх:
 ```
 git config --global user.name <Your Name>
 git config --global user.email <your.email@example.com>
 ```
-3. In your folder 
+3. Өөрийн github-руу хийх folder дотор:
 ```
 git init 
 git add .
 git commit -m "<type>: (subject)"
 ```
 ### example commit:
-  fix: encoderiin timer.
-  type => chore, docs, feat, fix, refacter, style, values.
-### Connecting Your Local Repository to the Remote Repository
+  `fix: encoderiin timer`
+  ######type => chore, docs, feat, fix, refacter, style, values.
+### Өөрийн project-ийг  github-ийн repository-той холбох:
 ```
+git branch -M main
 git remote add origin https://github.com/yourusername/your-repository.git
 git push -u origin main
 ```
@@ -31,7 +33,7 @@ git pull origin main
 ```
 git push
 ```
-
+### Private project-ийг clone хийх, push хийх үед Username, password нэхдэг.Иймд SSH-ээр хандвал олон удаа password, username хийх шаардлагагүй болно. 
 #### SSH холбох заавар.
 ```
 ls -al ~/.ssh
