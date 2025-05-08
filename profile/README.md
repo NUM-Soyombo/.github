@@ -14,7 +14,7 @@ git commit -m "<type>: (subject)"
 ```
 ### example commit:
   `fix: encoderiin timer`
-  ######type => chore, docs, feat, fix, refacter, style, values.
+  ###### type => chore, docs, feat, fix, refacter, style, values.
 ### Өөрийн project-ийг  github-ийн repository-той холбох:
 ```
 git branch -M main
